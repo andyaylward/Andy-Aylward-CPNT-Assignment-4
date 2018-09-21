@@ -1,0 +1,67 @@
+/* * * * * * * * * * * * * * * *
+ * * * * * *  GENERAL * * * * * *
+ * * * * * * * * * * * * * * * */
+
+body {
+    background-color: #f1f1f1;
+}
+
+.container {
+    height: 1200px;
+    background-color: white;
+    padding: 0;
+}
+
+/* * * * * * * * * * * * * * * *
+ * * * * * *  HEADER * * * * * *
+ * * * * * * * * * * * * * * * */
+
+header {
+    height: 160px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-family: 'Rancho', cursive;
+    color: #222;
+    text-align: center;
+    line-height: .8;
+    font-size: 44px;
+} 
+
+.top {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 20px;
+}
+
+.header-text {
+    font-size: 60px;
+}
+
+.top-dog {
+    background-image: url('./imgs/dog1.png');
+    background-size: cover;
+    height: 100%;
+    width: 25%;
+    padding-right: 100px;
+}
+
+/* * * * * * * * * * * * * * * *
+ * * * * * *  NAVBAR * * * * * *
+ * * * * * * * * * * * * * * * */
+
+.navbar-light {
+    color: white;
+    background: linear-gradient(135deg, #2EB4DD, #2EB4DD 60%, #3574C5);
+}
+
+.navbar {
+    color: white;
+}
+
+.navbar:hover {
+    color: white;
+}
