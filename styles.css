@@ -6,8 +6,8 @@ body {
     background-color: #f1f1f1;
 }
 
-.container {
-    height: 1200px;
+.header-container {
+    height: 716px;
     background-color: white;
     padding: 0;
 }
@@ -46,7 +46,7 @@ h1 {
     background-size: cover;
     height: 100%;
     width: 25%;
-    padding-right: 100px;
+    margin-right: 20px;
 }
 
 /* * * * * * * * * * * * * * * *
@@ -63,5 +63,70 @@ h1 {
 }
 
 .navbar:hover {
+    color: white;
+}
+
+/* * * * * * * * * * * * * * * 
+ * * * * * *  HERO  * * * * * *
+ * * * * * * * * * * * * * * */
+
+ .hero {
+     width: 100%;
+     height: 500px;
+ }
+
+ .hero-img {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(0,0,0,.4) -20%, transparent), url('./imgs/hero.jpeg');
+    background-size: cover;
+ }
+
+ /* * * * * * * * * * * * * * * 
+ * * * * * *  MAIN  * * * * * *
+ * * * * * * * * * * * * * * */
+
+ .main-container {
+    height: 716px;
+    background-color: white;
+}
+
+ .donate, .lost-found {
+     padding: 20px 20px;
+ }
+
+.donate-img-container, .lost-found-img-container {
+    margin-top: 10px;
+    height: 100px;
+    width: 100%
+}
+
+.donate-img {
+    background: linear-gradient(45deg, rgba(0,0,0,.4) -20%, transparent), url('./imgs/cat1.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: 0% 50%;
+}
+
+.lost-found-img {
+    background: linear-gradient(45deg, rgba(0,0,0,.4) -20%, transparent), url('./imgs/dog2.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: 80% 80%;
+}
+
+.button-container {
+    height: 45px;
+    width: 100%;
+    background-color: #E53478;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.button-container a {
     color: white;
 }
