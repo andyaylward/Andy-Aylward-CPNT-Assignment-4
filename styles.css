@@ -27,6 +27,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 header a:hover {
@@ -76,6 +77,10 @@ h1 {
     color: white;
 }
 
+.nav-container {
+    background-color: white;
+    padding: 0;
+}
 /* * * * * * * * * * * * * * * 
  * * * * * *  HERO  * * * * * *
  * * * * * * * * * * * * * * */
@@ -254,13 +259,18 @@ h1 {
  /* * * * * * * * * * * * * 
  * * * * * * ABOUT  * * * *
  * * * * * * * * * * * * * */
+.about-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 
 .about-img-container {
-    height: 600px;
+    height: 500px;
 }
 
 .about-img {
-    background-image: url('./imgs/cat2.png');
+    background-image: url('./imgs/cat2.jpg');
     background-size: cover;
     background-position: 40%, 40%;
     width: 100%;
@@ -269,17 +279,33 @@ h1 {
 
 .about-content {
     padding: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
-/* ADD TO NAV */
-.nav-container {
-    background-color: white;
-    padding: 0;
+
+@media (max-width: 991px) {
+    .about-img-container {
+        max-height: 250px;
+    }
+ 
+    .about-img {
+        background-position: 0 30%;
+    } 
 }
 
-/* ADOPTION PAGE */
+@media (max-width: 768px) {
+   .about-img-container {
+       max-height: 250px;
+   }
+
+   .about-img {
+       background-position: 0px -130px;
+   }
+}
+
+/* * * * * * * * * * * * * 
+ * * * * * * ADOPTION  * * * 
+ * * * * * * * * * * * * * */
+
 .card-container {
     background: white;
     padding-top: 20px;
