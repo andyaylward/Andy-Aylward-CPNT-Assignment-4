@@ -26,27 +26,59 @@
         
         <!-- * * * * * * * NAVIGATION * * * * * * * -->
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar navlinks" href="index.html">Home</a>
-            <a class="navbar navlinks" href="about.html">About Us</a>
-            <a class="navbar navlinks" href="adoptions.html">Adoptions</a>
-            <a class="navbar navlinks" href="#">Get Involved</a>
-            <a class="navbar navlinks" href="#">News & Events</a>
-            <a class="navbar navlinks" href="#">Lost & Found</a>
+                <a class="navbar navlinks" href="index.html">Home</a>
+                <a class="navbar navlinks" href="about.html">About Us</a>
+                <a class="navbar navlinks" href="adoptions.html">Adoptions</a>
+                <a class="navbar navlinks" href="contact.html">Contact</a>
+                <button class='burger' id='button'><i class="fas fa-bars fa-2x"></i></button>
         </nav>
     </section>
-        
+
+    <!-- * * * * * * * DROPDOWN * * * * * * * -->
+    <div class="container dropdown-container">
+            <div class='test'>
+                <div class="dropdown closed" id='dropdown'>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="adoptions.html">Adoptions</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><button id='close-button'><a>Close</a></button></li>
+                        </ul>
+                </div>
+            </div>
+        </div>    
+
     <!-- ADOPTION CARDS -->
     <section class='container card-container'>
         <div class="row">
             <div class="adopt-card">
                 <div class='adopt-img-container'>
-                    <div class="adopt-img"></div>
+                    <div class="adopt-img1"></div>
+                </div>
+                <div class="adopt-content">
+                    <ul>
+                        <li><strong>Name:</strong> Shadow</li>
+                        <li><strong>Age:</strong> ~ 2 years</li>
+                        <li><strong>Gender:</strong> Male</li>
+                        <li><strong>About:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidemut ut culpa voluptatibus quibusdam enim hic soluta pariatur, nihil illum reprehenderit laborum libero praesentium dolor nesciunt doloremque. Reprehenderit, blanditiis voluptates!</li>
+                        <li><button class='btn btn-outline-primary'>Inquire about Shadow</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="adopt-card">
+                <div class='adopt-img-container'>
+                    <div class="adopt-img2"></div>
                 </div>
                 <div class="adopt-content">
                     <ul>
                         <li><strong>Name:</strong> Roofus</li>
-                        <li><strong>Age:</strong> 2 years</li>
-                        <li><strong>About:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidemut ut culpa voluptatibus quibusdam enim hic soluta pariatur, nihil illum reprehenderit laborum libero praesentium dolor nesciunt doloremque. Reprehenderit, blanditiis voluptates!</li>
+                        <li><strong>Age:</strong> ~ 6 years</li>
+                        <li><strong>Gender:</strong> Male</li>
+                        <li><strong>About:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ut culpa voluptatibus quibusdam enim hic soluta pariatur, nihil illum reprehenderit laborum libero praesentium dolor nesciunt doloremque. Reprehenderit, blanditiis voluptates!</li>
                         <li><button class='btn btn-outline-primary'>Inquire about Roofus</button></li>
                     </ul>
                 </div>
@@ -56,28 +88,13 @@
         <div class="row">
             <div class="adopt-card">
                 <div class='adopt-img-container'>
-                    <div class="adopt-img"></div>
+                    <div class="adopt-img3"></div>
                 </div>
                 <div class="adopt-content">
                     <ul>
-                        <li><strong>Name:</strong> Bingo</li>
-                        <li><strong>Age:</strong> ~ 4 months</li>
-                        <li><strong>About:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ut culpa voluptatibus quibusdam enim hic soluta pariatur, nihil illum reprehenderit laborum libero praesentium dolor nesciunt doloremque. Reprehenderit, blanditiis voluptates!</li>
-                        <li><button class='btn btn-outline-primary'>Inquire about Bingo</button></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="adopt-card">
-                <div class='adopt-img-container'>
-                    <div class="adopt-img"></div>
-                </div>
-                <div class="adopt-content">
-                    <ul>
-                        <li><strong>Name:</strong> Shadow</li>
-                        <li><strong>Age:</strong> 4 years</li>
+                        <li><strong>Name:</strong> Jojo</li>
+                        <li><strong>Age:</strong> 3 years</li>
+                        <li><strong>Gender:</strong> Female</li>
                         <li><strong>About:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ut culpa voluptatibus quibusdam enim hic soluta pariatur, nihil illum reprehenderit laborum libero praesentium dolor nesciunt doloremque. Reprehenderit, blanditiis voluptates!</li>
                         <li><button class='btn btn-outline-primary'>Inquire about Shadow</button></li>
                     </ul>
@@ -88,12 +105,13 @@
         <div class="row">
             <div class="adopt-card">
                 <div class='adopt-img-container'>
-                    <div class="adopt-img"></div>
+                    <div class="adopt-img4"></div>
                 </div>
                 <div class="adopt-content">
                     <ul>
-                        <li><strong>Name:</strong> Kodi</li>
-                        <li><strong>Age:</strong> 4 years</li>
+                        <li><strong>Name:</strong> Izzy</li>
+                        <li><strong>Age:</strong> ~ 8 months</li>
+                        <li><strong>Gender:</strong> Female</li>
                         <li><strong>About:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ut culpa voluptatibus quibusdam enim hic soluta pariatur, nihil illum reprehenderit laborum libero praesentium dolor nesciunt doloremque. Reprehenderit, blanditiis voluptates!</li>
                         <li><button class='btn btn-outline-primary'>Inquire about Kodi</button></li>
                     </ul>
@@ -104,18 +122,24 @@
         <div class="row">
             <div class="adopt-card">
                 <div class='adopt-img-container'>
-                    <div class="adopt-img"></div>
+                    <div class="adopt-img5"></div>
                 </div>
                 <div class="adopt-content">
                     <ul>
                         <li><strong>Name:</strong> Billy</li>
                         <li><strong>Age:</strong> 4 years</li>
+                        <li><strong>Gender:</strong> Male</li>
                         <li><strong>About:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ut culpa voluptatibus quibusdam enim hic soluta pariatur, nihil illum reprehenderit laborum libero praesentium dolor nesciunt doloremque. Reprehenderit, blanditiis voluptates!</li>
                         <li><button class='btn btn-outline-primary'>Inquire about Billy</button></li>
                     </ul>
                 </div>
             </div>
         </div> 
+
+          
+<br>
+<div class='footer-banner'>
+</div> 
     </section>
 
     <!-- * * * * * * * FOOTER SECTION * * * * * * * -->
@@ -138,5 +162,7 @@
             </div>  
         </div>
     </section> 
+
+<script src="app.js"></script>     
 </body>
 </html>

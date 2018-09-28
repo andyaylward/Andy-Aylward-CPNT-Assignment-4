@@ -12,7 +12,8 @@
 </head>
 <body>
     <section class="container header-container">
-        <!-- * * * * * * * TOP HEADER * * * * * * * -->
+    <!-- * * * * * * * TOP HEADER * * * * * * * -->
+        
         <header>
             <a href='index.html'>
                 <div class='top'>
@@ -26,19 +27,37 @@
 
         <!-- * * * * * * * NAVIGATION * * * * * * * -->
         <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar navlinks" href="about.html">About Us</a>
-                <a class="navbar navlinks" href="adoptions.html">Adoptions</a>
-                <a class="navbar navlinks" href="#">Get Involved</a>
-                <a class="navbar navlinks" href="#">News & Events</a>
+            <a class="navbar navlinks" href="index.html">Home</a>
+            <a class="navbar navlinks" href="about.html">About Us</a>
+            <a class="navbar navlinks" href="adoptions.html">Adoptions</a>
+            <a class="navbar navlinks" href="contact.html">Contact</a>
+            <button class='burger' id='button'><i class="fas fa-bars fa-2x"></i></button>
         </nav>
+    </section> 
 
-        <!-- * * * * * * * HERO SECTION * * * * * * * -->
+    <!-- * * * * * * * DROPDOWN * * * * * * * -->
+    <div class="container dropdown-container">
+        <div class='test'>
+            <div class="dropdown closed" id='dropdown'>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="adoptions.html">Adoptions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><button id='close-button'><a>Close</a></button></li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+      
+    <!-- * * * * * * * HERO SECTION * * * * * * * -->
+    <div class="container hero-container">
         <section class='hero'>
             <div class="hero-img"></div>
         </section>
-    </section>
+    </div>
 
-        <!-- * * * * * * * MAIN SECTION * * * * * * * -->
+    <!-- * * * * * * * MAIN SECTION * * * * * * * -->
     <section class='container main-container'>
         <div class='main row'>
             <div class='donate col-lg-6 col-md-6 col-sm-12'>
@@ -48,7 +67,7 @@
                 <div class='donate-img-container'>
                     <div class='donate-img'></div>
                     <div class='button-container'>
-                            <a href="#">Donate Now</a>
+                        <a href="#">Donate Now</a>
                     </div>
                 </div>
             </div>
@@ -76,10 +95,12 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea corporis suscipit dicta quis ut sunt, sequi eligendi, aspernatur ullam laudantium doloribus autem recusandae amet assumenda expedita ad enim, vero facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, cum. Necessitatibus repudiandae blanditiis adipisci enim possimus expedita fuga maiores totam veniam quos autem, eveniet nam id omnis vero eaque vero... <a href='#'> Read More.</a></p>
                 </div>
             </div>
-        </div>
+        </div>   
+        <br>
+        <div class='footer-banner'></div> 
     </section> 
 
-        <!-- * * * * * * * FOOTER SECTION * * * * * * * -->
+    <!-- * * * * * * * FOOTER SECTION * * * * * * * -->
     <section class='container footer-container'>
        <div class='footer-items h-100'>
            <div class="footer-left stretch">
@@ -97,12 +118,9 @@
                     <i class="fab fa-twitter-square fa-2x"></i>
                </div>
            </div>
-
        </div>
-
     </section>
-            
-           
-    
+                   
+<script src="app.js"></script>    
 </body>
 </html>

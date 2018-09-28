@@ -7,7 +7,6 @@ body {
 }
 
 .header-container {
-    height: 716px;
     background-color: white;
     padding: 0;
 }
@@ -16,6 +15,28 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.header-container {
+    position: relative;
+    z-index: 100000;
+}
+
+a {
+    transition: .1s;
+}
+
+a:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+    transition: .3s;
+    outline: none;
+    font-weight: 500;
+    transition: .3s;
+}
+
+a:hover + li{
+    border: 0px;
 }
 
 /* * * * * * * * * * * * * * * *
@@ -32,6 +53,10 @@ header {
 
 header a:hover {
     text-decoration: none;
+    transition: 0s;
+    transform: none;
+    letter-spacing: 0px;
+    font-weight: default;
 }
 
 h1 {
@@ -71,6 +96,7 @@ h1 {
 
 .navbar {
     color: white;
+    max-height: 56px;
 }
 
 .navbar:hover {
@@ -80,7 +106,15 @@ h1 {
 .nav-container {
     background-color: white;
     padding: 0;
+    position: relative;
+    z-index: 1000;
 }
+
+nav .navlinks {
+    text-decoration: none;
+    transition: .3s;
+}
+
 /* * * * * * * * * * * * * * * 
  * * * * * *  HERO  * * * * * *
  * * * * * * * * * * * * * * */
@@ -88,6 +122,10 @@ h1 {
  .hero {
      width: 100%;
      height: 500px;
+ }
+
+ .hero-container {
+     padding: 0px;
  }
 
  .hero-img {
@@ -238,6 +276,16 @@ h1 {
     padding: 20px;
 }
 
+.footer-banner {
+    height: 120px;
+    margin: 0 auto;
+    padding: 0px;
+    background-image: linear-gradient(white, transparent), url('./imgs/footer-img.jfif');
+    background-size: cover;
+    background-position: 90% 90%;
+    margin: -20px -15px;
+}
+
 @media (max-width: 580px) {
     .icons i {
         font-size: 110%;
@@ -264,15 +312,24 @@ h1 {
     padding-bottom: 20px;
 }
 
-
 .about-img-container {
-    height: 500px;
+    min-height: 270px;
+    margin: 0px;
+    min-width: 330px;
+    max-width: 550px;
+}
+
+.about-img-container2 {
+    min-height: 270px;
+    margin: 0px;
+    min-width: 330px;
+    max-width: 550px;
 }
 
 .about-img {
-    background-image: url('./imgs/cat2.jpg');
+    background: linear-gradient(45deg, rgba(0,0,0,.4) -20%, transparent), url('./imgs/cat2.jpg');
     background-size: cover;
-    background-position: 40%, 40%;
+    background-position: 50% 30%;
     width: 100%;
     height: 100%;
 }
@@ -281,26 +338,35 @@ h1 {
     padding: 20px;
 }
 
+.about-content .button-container {
+    margin-bottom: 30px;
+}
+
+.about-img2 {
+    background-image: url('./imgs/event.jfif');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
 
 @media (max-width: 991px) {
     .about-img-container {
-        max-height: 250px;
+        min-height: 180px;
+        min-width: 100%;
     }
- 
-    .about-img {
-        background-position: 0 30%;
-    } 
+
+    .about-img-container2 {
+        min-height: 240px;
+        min-width: 100%;
+    }
+
+    .about-container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        position: relative;
+    }
 }
 
-@media (max-width: 768px) {
-   .about-img-container {
-       max-height: 250px;
-   }
-
-   .about-img {
-       background-position: 0px -130px;
-   }
-}
 
 /* * * * * * * * * * * * * 
  * * * * * * ADOPTION  * * * 
@@ -321,8 +387,45 @@ h1 {
     justify-content: space-between;
 }
 
+.adopt-img1{
+    background-image: url('./imgs/adopt1.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 50vH;
+}
+
+.adopt-img2{
+    background-image: url('./imgs/adopt2.jpg');
+    background-size: cover;
+    background-position: 100% 20%;
+    width: 100%;
+    height: 50vH;
+}
+
+.adopt-img3{
+    background-image: url('./imgs/adopt4.jpg');
+    background-size: cover;
+    background-position: 0% 60%;
+    width: 100%;
+    height: 50vH;
+}
+
+.adopt-img4{
+    background-image: url('./imgs/adopt3.jpg');
+    background-size: cover;
+    background-position: 50% 10%;
+    width: 100%;
+    height: 50vH;
+}
+
+.adopt-img5{
+    background-image: url('./imgs/adopt5.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 50vH;
+}
+
 .adopt-img-container {
-    background-color: #222;
     min-height: 270px;
     width: 48%;
     margin: 0px;
@@ -351,4 +454,139 @@ ul button {
     .adopt-img-container {
         width: 100%;
     }
+}
+
+/* * * * * * * * * * * * * 
+ * * * * * * CONTACT  * * * 
+ * * * * * * * * * * * * * */
+ .contact-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contact-container ul{
+    margin-bottom: 20px;
+}
+
+.contact-img-container, .contact-img-container2{
+    min-height: 270px;
+    width: 48%;
+    margin: 0px;
+    min-width: 330px;
+    max-width: 550px;
+}
+
+.contact-img1 {
+    background-image: url('./imgs/map.gif');
+    background-size: cover;
+    background-position: 50% 30%;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-content {
+    padding: 20px;
+}
+
+.contact-img2 {
+    background-image: url('./imgs/dog4.jpeg');
+    background-size: cover;
+    background-position: 10% 80%;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 991px) {
+    .contact-img-container {
+        min-height: 180px;
+        min-width: 100%;
+    }
+
+    .contact-img-container2 {
+        min-height: 240px;
+        min-width: 100%;
+    }
+}
+
+/* * * * * * * * * * * * * 
+ * * * * * * BURGER MENU  * * 
+ * * * * * * * * * * * * * */
+
+ .burger {
+    visibility: hidden;
+    padding: 10px;
+}
+
+#button {
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+
+@media (max-width: 768px) {
+    nav a {
+        visibility: hidden;
+    }
+
+    .burger {
+        visibility: visible;
+    }
+}
+
+@media (min-width: 768px) {
+    .dropdown-container{
+        display: none;
+        transition: 0s;
+    }
+}
+
+/* * * * * * * * * * * * * *
+  * * * DROPDOWN MENU  * * *
+ * * * * * * * * * * * * * */
+
+.dropdown {
+    width: 100%;
+    background-color: #222;
+    position: relative;
+    transform: translate(0px, 0px);
+    transition: .5s;
+}
+
+.closed {
+    transform: translate(0px, -325px);
+    display: none;
+}   
+
+.dropdown a{
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.dropdown li {
+    border-bottom: solid 1px grey;
+}
+
+.test {
+    z-index: 0;
+    margin: 0px;
+}
+
+.dropdown-container {
+    padding: 0px;
+}
+
+#close-button {
+    background: none;
+    color: white;
+    background-color: #B22520;
+    margin-top: 0;
+    outline: none;
+    border: 0px;
+    width: 100%;
+    padding: 0px;
 }
