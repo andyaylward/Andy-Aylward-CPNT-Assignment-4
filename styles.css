@@ -6,20 +6,10 @@ body {
     background-color: #f1f1f1;
 }
 
-.header-container {
-    background-color: white;
-    padding: 0;
-}
-
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-.header-container {
-    position: relative;
-    z-index: 100000;
 }
 
 a {
@@ -37,26 +27,6 @@ a:hover {
 
 a:hover + li{
     border: 0px;
-}
-
-/* * * * * * * * * * * * * * * *
- * * * * * *  HEADER * * * * * *
- * * * * * * * * * * * * * * * */
-
-header {
-    height: 160px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header a:hover {
-    text-decoration: none;
-    transition: 0s;
-    transform: none;
-    letter-spacing: 0px;
-    font-weight: default;
 }
 
 h1 {
@@ -84,6 +54,34 @@ h1 {
     width: 25%;
     margin-right: 20px;
 }
+
+/* * * * * * * * * * * * * * * *
+ * * * * * *  HEADER * * * * * *
+ * * * * * * * * * * * * * * * */
+
+.header-container {
+    background-color: white;
+    padding: 0;
+    position: relative;
+    z-index: 100000;
+}
+
+header {
+    height: 160px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a:hover {
+    text-decoration: none;
+    transition: 0s;
+    transform: none;
+    letter-spacing: 0px;
+    font-weight: default;
+}
+
 
 /* * * * * * * * * * * * * * * *
  * * * * * *  NAVBAR * * * * * *
@@ -203,6 +201,7 @@ nav .navlinks {
 
 .story-content {
     font-size: 16px;
+    margin: 0 auto;
 }
 
 .story-img-container {
@@ -238,6 +237,11 @@ nav .navlinks {
     }
 }
 
+@media (max-width: 498px) {
+    .story-content {
+        font-size: 12px;
+    }
+}
 
  /* * * * * * * * * * * * * 
  * * * * * * FOOTER  * * * *
@@ -454,7 +458,8 @@ ul button {
 /* * * * * * * * * * * * * 
  * * * * * * CONTACT  * * * 
  * * * * * * * * * * * * * */
- .contact-container {
+
+.contact-container {
     padding-top: 20px;
     padding-bottom: 20px;
 }
