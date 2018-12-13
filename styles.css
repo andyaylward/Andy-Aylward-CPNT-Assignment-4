@@ -513,7 +513,7 @@ ul button {
  * * * * * * * * * * * * * */
 
  .burger {
-    visibility: hidden;
+    display: none;
     padding: 10px;
 }
 
@@ -526,12 +526,12 @@ ul button {
 
 
 @media (max-width: 768px) {
-    nav a {
-        visibility: hidden;
+    .navlinks {
+        display: none;
     }
 
     .burger {
-        visibility: visible;
+        display: block;
     }
 }
 
